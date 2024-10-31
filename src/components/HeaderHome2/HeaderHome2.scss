@@ -1,5 +1,5 @@
 .header-home2 {
-  background-image: url("./Background\ Slider.png");
+  background-image: url("./img/Background\ Slider.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100%;
@@ -29,7 +29,7 @@
 }
 
 .styled-navbar-toggle2 {
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     margin-left: auto;
     display: flex;
     flex-direction: row;
@@ -51,7 +51,7 @@
 }
 
 .styled-navbar-collapse2 {
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     background-color: rgb(185, 185, 185);
 
     border-radius: 20px;
@@ -92,7 +92,7 @@
     text-align: start;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -100,7 +100,6 @@
   }
 }
 
-/* Các lớp CSS cho home2-link, home3-link, home4-link, home5-link, home6-link */
 .home2-link2 {
   font-weight: 500;
   font-size: 16px;
@@ -112,7 +111,7 @@
   @media (max-width: 1088px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -130,7 +129,7 @@
   @media (max-width: 1088px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -148,7 +147,7 @@
   @media (max-width: 1088px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -166,7 +165,7 @@
   @media (max-width: 1088px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -188,7 +187,7 @@
   @media (max-width: 1088px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;

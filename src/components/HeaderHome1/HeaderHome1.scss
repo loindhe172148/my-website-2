@@ -1,11 +1,14 @@
-
-.header-home1{
-  background-image: url("./Slide Background.png");
-  background-repeat: no-repeat;
-  background-size: 88% 93%;
+.header-home1 {
   height: 100%;
   width: 100%;
+
+  @media (min-width: 992px) {
+    background-image: url("./img/Slide Background.png");
+    background-repeat: no-repeat;
+    background-size: 88% 93%;
+  }
 }
+
 .styled-navbar {
   display: flex;
   justify-content: space-between;
@@ -23,7 +26,7 @@
 }
 
 .styled-navbar-toggle {
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     margin-left: auto;
     display: flex;
     flex-direction: row;
@@ -34,7 +37,7 @@
 }
 
 .styled-navbar-collapse {
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     background-color: rgb(185, 185, 185);
     border-radius: 20px;
     position: absolute;
@@ -74,14 +77,14 @@
     text-align: start;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
   }
 }
 
-/* Các lớp CSS cho home2-link, home3-link, home4-link, home5-link, home6-link */
+
 .home2-link {
   font-weight: 500;
   font-size: 16px;
@@ -93,7 +96,7 @@
   @media (max-width: 1440px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -110,7 +113,7 @@
   @media (max-width: 1440px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -127,7 +130,7 @@
   @media (max-width: 1440px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -144,7 +147,7 @@
   @media (max-width: 1440px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -165,7 +168,7 @@
   @media (max-width: 1440px) {
     margin-left: 15px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     text-align: center;
     margin-left: 0px;
     margin-top: 0px;
@@ -197,10 +200,6 @@
     justify-content: center;
     align-items: center;
   }
-  // img{
-  //   width: 601.5px;
-  //   height: 397.5px;
-  // }
 }
 .header-left {
   margin-top: 57px;
@@ -259,7 +258,6 @@
 }
 
 .slider-button {
-  /* Thêm các thuộc tính CSS cho nút slider tại đây */
   width: 100%;
   max-width: 100%;
   margin-left: auto;

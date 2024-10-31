@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home2.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { useSelector, useDispatch } from "react-redux";
+import { setActiveBox } from "../../redux/slices/activeBoxSlice";
 
 const Home2 = () => {
-  const [activeBox, setActiveBox] = useState("middle");
+  const dispatch = useDispatch();
+  const activeBox = useSelector((state) => state.activeBox.activeBox);
 
-  // Định nghĩa các kiểu inline cho hộp "active"
+
   const activeStyle = {
     border: " 1px solid #9ba2e0",
   };
 
   return (
     <div className="home2">
-      {/* Phần About Us */}
       <div className="home2_aboutus">
         <div className="home2_aboutus_l">
           <img src="imgHome2/Illustration-1.png" alt="imghome2-1" />
@@ -39,7 +41,7 @@ const Home2 = () => {
         </div>
       </div>
 
-      {/* Phần Main Services */}
+
       <div className="home2_mainservices">
         <h1>Main Services</h1>
         <h2>Our focus services</h2>
@@ -47,13 +49,11 @@ const Home2 = () => {
       </div>
       <div className="home2_bg3">
         <div className="home2_bg1">
-          {/* Phần Three Boxes */}
+
           <div className="home2_threebox">
             <div
-              className={`home2_threebox_l ${
-                activeBox === "left" ? "active" : ""
-              }`}
-              onClick={() => setActiveBox("left")}
+              className={`home2_threebox_l ${activeBox === "left" ? "active" : ""}`}
+              onClick={() => dispatch(setActiveBox("left"))} 
               style={activeBox === "left" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-2.png" alt="Beauty consultation" />
@@ -73,10 +73,8 @@ const Home2 = () => {
             </div>
 
             <div
-              className={`home2_threebox_m ${
-                activeBox === "middle" ? "active" : ""
-              }`}
-              onClick={() => setActiveBox("middle")}
+              className={`home2_threebox_m ${activeBox === "middle" ? "active" : ""}`}
+              onClick={() => dispatch(setActiveBox("middle"))} 
               style={activeBox === "middle" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-2 (1).png" alt="Skin treatments" />
@@ -96,10 +94,8 @@ const Home2 = () => {
             </div>
 
             <div
-              className={`home2_threebox_r ${
-                activeBox === "right" ? "active" : ""
-              }`}
-              onClick={() => setActiveBox("right")}
+              className={`home2_threebox_r ${activeBox === "right" ? "active" : ""}`}
+              onClick={() => dispatch(setActiveBox("right"))} 
               style={activeBox === "right" ? activeStyle : {}}
             >
               <img src="imgHome2/icon-3.png" alt="Beauty product" />
@@ -139,7 +135,7 @@ const Home2 = () => {
         </div>
         <div className="home2_bg2">
           <div className="home2_3mentor">
-            <div class="mentor_3">
+            <div className="mentor_3">
                         <img src="imgHome2/unsplash_3ewkNkfJj2k.png" alt="" />
 
               <h1>
@@ -159,7 +155,7 @@ const Home2 = () => {
                 />
               </h3>
             </div>
-            <div class=" mentor_3">
+            <div className=" mentor_3">
               <img src="imgHome2/unsplash_7tDGb3HrITg.png" alt="" />
               <h1>Watch out! don't choose the wrong beauty product</h1>
               <h2>
@@ -177,7 +173,7 @@ const Home2 = () => {
                 />
               </h3>
             </div>
-            <div class="mentor_3">
+            <div className="mentor_3">
               <img src="imgHome2/unsplash_0_McYfdyEDA.png" alt="" />
               <h1>
                 About skin care you need to
